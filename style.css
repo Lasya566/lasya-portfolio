@@ -1,0 +1,149 @@
+:root {
+  --deep-blue: #1e293b;
+  --blue-dark: #334155;
+  --blue-mid: #475569;
+  --blue-light: #64748b;
+  --blue-bg: #e0e7ef;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--blue-bg) 0%, var(--blue-light) 100%);
+  color: var(--deep-blue);
+}
+
+.header {
+  background: var(--deep-blue);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px var(--blue-dark);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+main {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px var(--blue-light);
+  padding: 2rem 2.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+  color: var(--deep-blue);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.about p,
+.projects p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--blue-mid);
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 2rem;
+}
+
+.skills li {
+  background: var(--blue-bg);
+  color: var(--deep-blue);
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--blue-light);
+  box-shadow: 0 1px 4px var(--blue-light);
+}
+
+.contact-info {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-info .phone {
+  color: var(--blue-dark);
+  font-weight: 500;
+}
+
+.contact-info .phone a {
+  color: var(--deep-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info .phone a:hover {
+  color: var(--blue-mid);
+  text-decoration: underline;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-light);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 8px var(--blue-bg);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.contact-icons a:hover {
+  background: var(--blue-dark);
+  transform: translateY(-4px) scale(1.08);
+}
+
+.contact-icons .icon {
+  width: 32px;
+  height: 32px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: var(--blue-dark);
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-top: 2.5rem;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 -2px 8px var(--blue-light);
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 1.2rem 0.8rem;
+  }
+  .skills ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
